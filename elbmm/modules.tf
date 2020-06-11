@@ -1,5 +1,5 @@
 module "vpc" {
-  source              = "/home/ec2-user/elbterraform/elb"
+  source              = "../elb/"
   vpc_cidr            = "172.31.0.0/16"
   Subnet              = "subnetid"
   Secgroup            = "secgroup"
