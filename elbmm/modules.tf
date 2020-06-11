@@ -1,0 +1,15 @@
+module "vpc" {
+  source              = "/home/ec2-user/elbterraform/elb"
+  vpc_cidr            = "172.31.0.0/16"
+  Subnet              = "subnetid"
+  Secgroup            = "secgroup"
+  Instanceport        = "insport"
+  Instanceprotocol    = "insprotocol"
+  Lbport              = "lbport"
+  Lbprotocol          = "lbprotocol"
+  healthcheckprotocol = "hcprotocol"
+  healthcheckpath     = "hcpath"
+  Instanceid          = "instanceid" 
+  Name                = "name"
+  Farm                = "farm"
+ }
