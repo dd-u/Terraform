@@ -1,5 +1,5 @@
 module "vpc" {
-  source              = "../elb/"
+  source              = "/var/lib/jenkins/workspace/CloudOps-Terraform/Management/ELB/elb"
   vpc_cidr            = "172.31.0.0/16"
   Subnet              = "subnetid"
   Secgroup            = "secgroup"
