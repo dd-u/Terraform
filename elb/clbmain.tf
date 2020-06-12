@@ -1,6 +1,6 @@
 resource "aws_elb" "load_balancer" {
   name            = "${var.Name}"
-  subnets         = ["${var.Subnet}"]
+  subnets         = ["${var.Subnets}"]
   security_groups = ["${var.Secgroup}"]
 
   internal = false
@@ -32,7 +32,7 @@ resource "aws_elb" "load_balancer" {
 
   tags = {
     Name                 = "${var.Name}"
-	Farm                 = "${var.Farm}"
+    Farm                 = "${var.Farm}"
   }
   #vpc_id            = "${var.vpc_cidr}"
   #instance_id        = "${var.Instanceid}" 
