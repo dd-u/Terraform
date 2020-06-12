@@ -1,15 +1,15 @@
-module "vpc" {
+module "elb" {
   source              = "/var/lib/jenkins/workspace/CloudOps-Terraform/Management/ELB/elb"
   vpc_cidr            = "172.31.0.0/16"
-  Subnet              = "subnetid"
+  Subnets              = "subnetid"
   Secgroup            = "secgroup"
   Instanceport        = "insport"
   Instanceprotocol    = "insprotocol"
   Lbport              = "lbport"
   Lbprotocol          = "lbprotocol"
-  healthcheckprotocol = "hcprotocol"
-  healthcheckpath     = "hcpath"
-  Instanceid          = "instanceid" 
+  #healthcheckprotocol = "hcprotocol"
+  #healthcheckpath     = "hcpath"
+  #Instanceid          = "instanceid" 
   Name                = "name"
   Farm                = "farm"
  }
