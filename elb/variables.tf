@@ -1,7 +1,7 @@
 variable "vpc_cidr" {
 type = list(string)
 }
-variable "Subnet" {
+variable "Subnets" {
 type = list(string)
 }
 variable "Secgroup" {
