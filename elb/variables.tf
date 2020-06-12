@@ -8,7 +8,7 @@ variable "Instanceport" {
 }
 variable "Instanceprotocol" {
 }
-variable "Lbport"     
+variable "Lbport"{     
 }
 variable "Lbprotocol" { 
 }
