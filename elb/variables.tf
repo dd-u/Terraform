@@ -12,6 +12,8 @@ variable "Lbport"{
 }
 variable "Lbprotocol" { 
 }
+variable "Instance"{
+}
 variable "Name" {
 }
 variable "Farm" { 
