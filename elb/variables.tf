@@ -1,5 +1,3 @@
-variable "vpc_cidr" {
-}
 variable "Subnets" {
 }
 variable "Secgroup" {
