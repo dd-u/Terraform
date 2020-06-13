@@ -1,5 +1,5 @@
 module "elb" {
-  source              = "/var/lib/jenkins/workspace/CloudOps-Terraform/Management/ELB/elb
+  source              = "/var/lib/jenkins/workspace/CloudOps-Terraform/Management/ELB/elb"
   Subnets              = "subnetid"
   Secgroup            = "secgroup"
   Instanceport        = "insport"
