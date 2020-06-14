@@ -14,5 +14,5 @@ variable "Instance"{
 }
 variable "Name" {
 }
-variable "Farm" { 
+variable "Env" { 
 }
