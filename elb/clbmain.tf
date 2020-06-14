@@ -25,7 +25,7 @@ resource "aws_elb" "myelb" {
   connection_draining_timeout = 400
 
   tags = {
-    Name = "${var.Farm}"
+    Environment  = "${var.Farm}"
   }
 }
 
