@@ -10,5 +10,5 @@ module "elb" {
   #healthcheckpath     = "hcpath"
   Instance            = "instanceid" 
   Name                = "name"
-  Environment                = "Env"
+  Environment         = "Envname"
  }
