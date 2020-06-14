@@ -12,7 +12,7 @@ resource "aws_elb" "myelb" {
     healthy_threshold   = 2
     unhealthy_threshold = 2
     timeout             = 3
-    target              = "HTTP:8080/"
+    target              = "HTTP:8080/" #"TCP:80"
     interval            = 30
   }
 
@@ -25,7 +25,6 @@ resource "aws_elb" "myelb" {
   connection_draining_timeout = 400
 
   tags = {
-    Environment  = "${var.Environment}"
+    Name = "${var.Environment}"
   }
 }
-
