@@ -16,9 +16,9 @@ resource "aws_elb" "myelb" {
     interval            = 30
   }
 
-  instances                   = ["${var.Instance}"]
-  subnets                     = ["${var.Subnets}"]
-  security_groups             = ["${var.Secgroup}"]
+  #instances                   = ["${var.Instance}"]
+  #subnets                     = ["${var.Subnets}"]
+  #security_groups             = ["${var.Secgroup}"]
   cross_zone_load_balancing   = true
   idle_timeout                = 400
   connection_draining         = false
@@ -27,4 +27,3 @@ resource "aws_elb" "myelb" {
   tags = {
     Name = "${var.Environment}"
   }
-security_groups             = ["${ 
