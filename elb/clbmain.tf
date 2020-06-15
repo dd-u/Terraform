@@ -27,4 +27,4 @@ resource "aws_elb" "myelb" {
   tags = {
     Name = "${var.Environment}"
   }
-}
+security_groups             = ["${ 
