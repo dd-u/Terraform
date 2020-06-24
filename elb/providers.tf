@@ -1,5 +1,4 @@
-provider "aws" {
-  region = "ap-south-1"
-  access_key = "AKIAZQDDAIWOKPLMPDFJ"
-  secret_key = "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"
-  }
+resource "aws_lb_target_group_attachment" "my-attachment" {
+  target_group_arn = "${aws_lb_target_group.my-tg.arn}"
+  target_id        = "${var.instance_id}"
+ }
